@@ -1,2 +1,2 @@
-# S-projects
-Small projects
+# Binary-Search
+Binary search simplified.
