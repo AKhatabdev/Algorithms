@@ -1,2 +1,1 @@
-# Binary-Search
-Binary search simplified.
+# Search Algorithms
