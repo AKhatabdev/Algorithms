@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+Author: Awais Khatab
+Binary Search with User Input
+Version 1.1.0
+V control: GitHub
+*/
+
 // Java implementation of recursive Binary Search (Decreasing)
 class BinarySearch
 {
