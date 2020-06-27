@@ -1,11 +1,13 @@
 import java.util.ArrayList;
+import java.util.Scanner;
+
 // Java implementation of recursive Binary Search (Decreasing)
 class BinarySearch
 {
-	int step = 0;
+    int step = 0;
     // Returns index of x if it is present in list[l..
     // r], else return -1
-    int binarySearch(ArrayList<Integer> list, int l, int h, int x) //METHOD
+    int binarySearch(ArrayList<Integer> list, int l, int h, int x)
     {
     	++step;
     	
@@ -40,18 +42,28 @@ class BinarySearch
     // Driver method to test above
     public static void main(String args[])
     {
-        ArrayList<Integer> list = new ArrayList<Integer>(100);
-        for(int x = 0; x < 100; x++){
-            list.add(x);
-    }
+        Scanner userInputArray = new Scanner(System.in);
+        //SYSTEM MESSAGES AND USER INPUT
+        System.out.println("Enter the size of the Array: ");
+        int size = userInputArray.nextInt();
+        size++;
 
-        BinarySearch ob = new BinarySearch();	//Using the function in this instance
+        System.out.println("Enter number to find: ");
+        int findX = userInputArray.nextInt();
+        userInputArray.close();
+
+        ArrayList<Integer> list = new ArrayList<Integer>(size);
+        for(int x = 0; x < size; x++){
+            list.add(x);
+        }
+
+        BinarySearch obj = new BinarySearch();	//Using the function in this instance
         				//List to be searched
         int n = list.size();					//Length of List 0,1,2,3,4,5,6,7,8,9,10 = 11
+
+        int x = findX;		// Element to find
         
-        int x = 75;		// Element to find
-        
-        int result = ob.binarySearch(list,0,n-1,x);
+        int result = obj.binarySearch(list,0,n-1,x);
         
         if (result == -1)
             System.out.println("Element not present");
