@@ -72,4 +72,4 @@ class BinarySearch {
 //TIME COMPLEXITY: T(n) = T(n/2) + c 
 //recursive implementation: O(Logn)
 //iterative implementation: O(1)
-//checking Working Copy Commit
+// TODO: add Regex and input validation 
