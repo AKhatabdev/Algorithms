@@ -4,8 +4,7 @@ import java.util.Scanner;
 /*
 Author: Awais Khatab
 Binary Search with User Input
-Version 1.1.0
-V.Control: GitHub
+Version 1.4
 */
 
 // Java implementation of recursive Binary Search (Decreasing)
