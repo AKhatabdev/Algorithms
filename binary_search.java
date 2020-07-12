@@ -70,7 +70,7 @@ class BinarySearch {
         if (result == -1)
             System.out.println("Element not present");
         else
-            System.out.println("Element found at index: " + result + "\nNumber: "+ x +"\nCompleted in: "+ step);
+            System.out.println("Element found at index: " + result + "\nNumber: "+ x +"\nCompleted in: "+ step +" Steps");
     }
 }		
 //TIME COMPLEXITY: T(n) = T(n/2) + c 
