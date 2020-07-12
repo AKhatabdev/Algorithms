@@ -43,14 +43,24 @@ class BinarySearch {
     public static void main(String args[]) {
         Scanner userInputArray = new Scanner(System.in);
         //SYSTEM MESSAGES AND USER INPUT
+        do{
         System.out.println("Enter the size of the Array: ");
+        while (!scanner.hasNextInt()){
+        String input = scanner.next();
+        System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
+            }
         int size = userInputArray.nextInt();
         size++;
-
+        }
+        do{
         System.out.println("Enter number to find: ");
+        while (!scanner.hasNextInt()){
+        String input = scanner.next();
+        System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
+            }
         int findX = userInputArray.nextInt();
         userInputArray.close();
-
+        }
         ArrayList<Integer> list = new ArrayList<Integer>(size);
         for(int x = 0; x < size; x++){
             list.add(x);
