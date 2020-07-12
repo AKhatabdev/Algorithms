@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 // Java implementation of recursive Binary Search (Decreasing)
 class BinarySearch {
-    int step = 0;
+    public static int step;
     // Returns index of x if it is present in list[l..r], else return -1
     int binarySearch(ArrayList<Integer> list, int l, int h, int x) {
     	++step;
@@ -53,7 +53,7 @@ class BinarySearch {
         }
         int findX = userInputArray.nextInt();
         userInputArray.close();
-        //Creates an Array from user input (size)
+        //Creates an Array from user input (0, 1, 2,...Size)
         ArrayList<Integer> list = new ArrayList<Integer>(size);
         for(int x = 0; x < size; x++){
             list.add(x);
@@ -69,7 +69,7 @@ class BinarySearch {
         if (result == -1)
             System.out.println("Element not present");
         else
-            System.out.println("Element found at index: " + result + "\nElement: "+ x);
+            System.out.println("Element found at index: " + result + "\nNumber: "+ x +"\nCompleted in: "+ step);
     }
 }		
 //TIME COMPLEXITY: T(n) = T(n/2) + c 
