@@ -1,17 +1,15 @@
-import java.util.ArrayList;
-import java.util.Scanner;
-
 /*
 Author: Awais Khatab
-Binary Search with User Input
-Version 1.4
+App: Binary Search with User Input
+Version: 1.4
 */
+import java.util.ArrayList;
+import java.util.Scanner;
 
 // Java implementation of recursive Binary Search (Decreasing)
 class BinarySearch {
     int step = 0;
-    // Returns index of x if it is present in list[l..
-    // r], else return -1
+    // Returns index of x if it is present in list[l..r], else return -1
     int binarySearch(ArrayList<Integer> list, int l, int h, int x) {
     	++step;
     	System.out.println("Step: " + step);
@@ -21,29 +19,23 @@ class BinarySearch {
     	
         if (h >= l) {
             int mid = l + (h - l)/2;
-            // If the element is present at the 
-            // middle itself
+            // If the element is present at the middle itself
             if (list.get(mid) == x)
                return mid;
-            // If element is smaller than mid, then 
-            // it can only be present in left sub array
+            // If element is smaller than mid, then it can only be present in left sub array
             if (list.get(mid) > x)
                return binarySearch(list, l, mid-1, x);
-            // Else the element can only be present
-            // in right sub array
+            // Else the element can only be present in right sub array
             return binarySearch(list, mid+1, h, x);
         }
- 
         //  When the element is not present in the array
         return -1;
     }
-
     // Driver method to test above
     public static void main(String args[]) {
         int size = 0;
         Scanner userInputArray = new Scanner(System.in);
-        //SYSTEM MESSAGES AND USER INPUT
-
+        //User Input (Size of Array)
         System.out.println("Enter the size of the Array: ");
         //Validation
         while (!userInputArray.hasNextInt()) {
@@ -52,7 +44,7 @@ class BinarySearch {
             }
         size = userInputArray.nextInt();
         size++;
-
+        //User Input (Find Number)
         System.out.println("Enter number to find: ");
         //Validation
         while(!userInputArray.hasNextInt()){
