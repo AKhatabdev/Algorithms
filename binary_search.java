@@ -34,7 +34,6 @@ class BinarySearch {
     }
     // Driver method to test above
     public static void main(String args[]) {
-        int size = 0;
         int notValidNumber = 2100000000;
         Scanner userInputArray = new Scanner(System.in);
         //User Input (Size of Array)
