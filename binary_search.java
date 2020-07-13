@@ -35,12 +35,12 @@ class BinarySearch {
     // Driver method to test above
     public static void main(String args[]) {
         int size = 0;
-        int notValidNumber = 2147483646;
+        int notValidNumber = 2100000000;
         Scanner userInputArray = new Scanner(System.in);
         //User Input (Size of Array)
         System.out.println("Enter the size of the Array: ");
         //Validation
-        while (!userInputArray.hasNextInt() || size >= notValidNumber) {
+        while (!userInputArray.hasNextInt()){
                 String input = userInputArray.next();
                 System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
             }
