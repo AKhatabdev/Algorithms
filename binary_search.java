@@ -1,18 +1,16 @@
+/*
+Author: Awais Khatab
+App: Binary Search with User Input
+Version: 1.4
+All rights reserved @Awais Khatab
+*/
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/*
-Author: Awais Khatab
-Binary Search with User Input
-Version 1.1.0
-V.Control: GitHub
-*/
-
 // Java implementation of recursive Binary Search (Decreasing)
 class BinarySearch {
-    int step = 0;
-    // Returns index of x if it is present in list[l..
-    // r], else return -1
+    public static int step;
+    // Returns index of x if it is present in list[l..r], else return -1
     int binarySearch(ArrayList<Integer> list, int l, int h, int x) {
     	++step;
     	System.out.println("Step: " + step);
@@ -22,53 +20,50 @@ class BinarySearch {
     	
         if (h >= l) {
             int mid = l + (h - l)/2;
-            // If the element is present at the 
-            // middle itself
+            // If the element is present at the middle itself
             if (list.get(mid) == x)
                return mid;
-            // If element is smaller than mid, then 
-            // it can only be present in left sub array
+            // If element is smaller than mid, then it can only be present in left sub array
             if (list.get(mid) > x)
                return binarySearch(list, l, mid-1, x);
-            // Else the element can only be present
-            // in right sub array
+            // Else the element can only be present in right sub array
             return binarySearch(list, mid+1, h, x);
         }
- 
         //  When the element is not present in the array
         return -1;
     }
-
     // Driver method to test above
     public static void main(String args[]) {
+        int size = 0;
+        int notValidNumber = 2100000000;
         Scanner userInputArray = new Scanner(System.in);
-        //SYSTEM MESSAGES AND USER INPUT
-        do{
+        //User Input (Size of Array)
         System.out.println("Enter the size of the Array: ");
-        while (!scanner.hasNextInt()){
-        String input = scanner.next();
-        System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
+        //Validation
+        while (!userInputArray.hasNextInt()){
+                String input = userInputArray.next();
+                System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
             }
         int size = userInputArray.nextInt();
         //Check length of user input
         int length = (int) (Math.log10(size);
         size++;
-        }
-        do{
+        //User Input (Find Number)
         System.out.println("Enter number to find: ");
-        while (!scanner.hasNextInt()){
-        String input = scanner.next();
-        System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
-            }
+        //Validation
+        while(!userInputArray.hasNextInt()){
+            String input = userInputArray.next();
+            System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
+        }
         int findX = userInputArray.nextInt();
         userInputArray.close();
-        }
+        //Creates an Array from user input (0, 1, 2,...Size)
         ArrayList<Integer> list = new ArrayList<Integer>(size);
         for(int x = 0; x < size; x++){
             list.add(x);
         }
-
-        BinarySearch obj = new BinarySearch();	//Using the function in this instance
+        //Using the function in this instance
+        BinarySearch obj = new BinarySearch();
         //List to be searched, User Input size();
         int n = list.size();
         // Element to find
@@ -78,10 +73,9 @@ class BinarySearch {
         if (result == -1)
             System.out.println("Element not present");
         else
-            System.out.println("Element found at index: " + result + "\nElement: "+ x);
+            System.out.println("Element found at index: " + result + "\nNumber: "+ x +"\nCompleted in: "+ step +" Steps");
     }
 }		
 //TIME COMPLEXITY: T(n) = T(n/2) + c 
 //recursive implementation: O(Logn)
 //iterative implementation: O(1)
-// TODO: add Regex and input validation 
