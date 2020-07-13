@@ -50,6 +50,8 @@ class BinarySearch {
         System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
             }
         int size = userInputArray.nextInt();
+        //Check length of user input
+        int length = (int) (Math.log10(size);
         size++;
         }
         do{
