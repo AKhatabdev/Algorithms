@@ -33,7 +33,7 @@ class BinarySearch {
         return -1;
     }
     // Driver method to test above
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int notValidNumber = 2100000000;
         Scanner userInputArray = new Scanner(System.in);
         //User Input (Size of Array)
@@ -45,7 +45,6 @@ class BinarySearch {
             }
         int size = userInputArray.nextInt();
         //Check length of user input
-        int length = (int) (Math.log10(size);
         size++;
         //User Input (Find Number)
         System.out.println("Enter number to find: ");
