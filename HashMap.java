@@ -20,4 +20,3 @@ class hashmap{
                 if(charCounts.get(c) == 1) return c;}
         }
     }
-}
