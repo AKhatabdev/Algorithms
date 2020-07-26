@@ -1,7 +1,7 @@
 /*
 Author: Awais Khatab
-App: Binary Search with User Input
-Version: 1.4
+Title: HashMap to find first non-repeating character
+Version: 1.1
 All rights reserved @Awais Khatab
 
 HashMap solution to first non repeating character given within a string of characters
@@ -10,6 +10,7 @@ Big O Notation: O(2n) simplified O(n)
 import java.util.HashMap;
 
 public class hashmap{
+    public static boolean checkFlag;
     public static void main(String[] args){
         String input = "aaaaabbbbccccdddeeefggghhiijjkkllmm";
         firstNonRepeatingCharacter(input);
@@ -17,6 +18,7 @@ public class hashmap{
 
     public static void firstNonRepeatingCharacter(String s) {
         HashMap<Character, Integer> charCounts = new HashMap<>();
+        checkFlag = false;
 
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
@@ -32,10 +34,15 @@ public class hashmap{
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (1 == charCounts.get(c)) {
+                checkFlag = true;
                 System.out.println("Operation Completed\n");
                 System.out.println("First non-repeating char is: " + c);
                 return;
             }
+        }
+        if (!checkFlag){
+            System.out.println("Operation Completed\n");
+            System.out.println("All characters are repeating!");
         }
     }
 }
