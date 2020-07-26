@@ -1,7 +1,7 @@
 /*
 Author: Awais Khatab
-App: Binary Search with User Input
-Version: 1.4
+Title: HashMap to find first non-repeating character
+Version: 1.1
 All rights reserved @Awais Khatab
 
 HashMap solution to first non repeating character given within a string of characters

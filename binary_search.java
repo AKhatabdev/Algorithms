@@ -1,7 +1,7 @@
 /*
 Author: Awais Khatab
-App: Binary Search with User Input
-Version: 1.4
+Title: Binary Search with User Input
+Version: 1.2
 All rights reserved @Awais Khatab
 
 Binary Search Example to find a number.
