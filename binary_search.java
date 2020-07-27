@@ -1,8 +1,13 @@
 /*
 Author: Awais Khatab
-App: Binary Search with User Input
-Version: 1.4
+Title: Binary Search with User Input
+Version: 1.2
 All rights reserved @Awais Khatab
+
+Binary Search Example to find a number.
+Big O Notation: T(n) = T(n/2) + c
+recursive implementation: O(Logn)
+iterative implementation: O(1)
 */
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -17,7 +22,7 @@ class BinarySearch {
     	System.out.println("Low: " + l);
     	System.out.println("High: " + h);
     	System.out.println(" ");
-    	
+
         if (h >= l) {
             int mid = l + (h - l)/2;
             // If the element is present at the middle itself
@@ -34,7 +39,6 @@ class BinarySearch {
     }
     // Driver method to test above
     public static void main(String[] args) {
-        int notValidNumber = 2100000000;
         Scanner userInputArray = new Scanner(System.in);
         //User Input (Size of Array)
         System.out.println("Enter the size of the Array: ");
@@ -44,7 +48,6 @@ class BinarySearch {
                 System.out.printf("\"%s\" not a valid input, please enter a valid number!.\n", input);
             }
         int size = userInputArray.nextInt();
-        //Check length of user input
         size++;
         //User Input (Find Number)
         System.out.println("Enter number to find: ");
@@ -73,7 +76,4 @@ class BinarySearch {
         else
             System.out.println("Element found at index: " + result + "\nNumber: "+ x +"\nCompleted in: "+ step +" Steps");
     }
-}		
-//TIME COMPLEXITY: T(n) = T(n/2) + c 
-//recursive implementation: O(Logn)
-//iterative implementation: O(1)
+}
