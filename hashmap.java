@@ -1,7 +1,7 @@
 /*
 Author: Awais Khatab
 Title: HashMap to find first non-repeating character
-Version: 1.2
+Version: 1.3
 All rights reserved @Awais Khatab
 
 HashMap solution to first non repeating character given within a string of characters
@@ -25,7 +25,6 @@ public class hashmap{
     public static void firstNonRepeatingCharacter(String s) {
         HashMap<Character, Integer> charCounts = new HashMap<>();
         checkFlag = false;
-
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (charCounts.containsKey(c)) {
