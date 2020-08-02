@@ -1,7 +1,7 @@
 /*
 Author: Awais Khatab
 Title: Binary Search with User Input
-Version: 1.2
+Version: 1.3
 All rights reserved @Awais Khatab
 
 Binary Search Example to find a number.
