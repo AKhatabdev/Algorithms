@@ -10,7 +10,7 @@ Big O Notation: O(2n) simplified O(n)
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class hashmap{
+class hashmap{
     public static boolean checkFlag;
     public static void main(String[] args){
         System.out.println("This program will take in a 'string' of characters and will check to see which character is the first non-repeating!\nWhen you are prompted, enter in the characters you wish to check, once you are done press ENTER.\n");
