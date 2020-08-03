@@ -1,7 +1,7 @@
 /*
 Author: Awais Khatab
 Title: HashMap to find first non-repeating character
-Version: 1.3
+Version: 1.4
 All rights reserved @Awais Khatab
 
 HashMap solution to first non repeating character given within a string of characters
