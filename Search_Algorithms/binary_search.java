@@ -1,4 +1,4 @@
-package Sorting_Algorithms;
+package Search_Algorithms;
 /*
 Author: Awais Khatab
 Title: Binary Search with User Input
