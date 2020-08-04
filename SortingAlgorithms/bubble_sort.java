@@ -1,4 +1,4 @@
-package Sorting_Algorithms;
+package SortingAlgorithms;
 /*
 Author: Awais Khatab
 Title: Bubble Sort with User Input
