@@ -2,7 +2,7 @@ package Sorting_Algorithms;
 /*
 Author: Awais Khatab
 Title: Bubble Sort with User Input
-Version: 1.2
+Version: 1.1
 All rights reserved @Awais Khatab
 
 Bubble Sort Example to sort numbers.
