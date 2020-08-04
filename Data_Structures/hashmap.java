@@ -1,4 +1,4 @@
-/*
+package Data_Structures;/*
 Author: Awais Khatab
 Title: HashMap to find first non-repeating character
 Version: 1.3
