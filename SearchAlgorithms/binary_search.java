@@ -61,9 +61,7 @@ class BinarySearch {
         userInputArray.close();
         //Creates an Array from user input (0, 1, 2,...Size)
         ArrayList<Integer> list = new ArrayList<Integer>(size);
-        for(int x = 0; x < size; x++){
-            list.add(x);
-        }
+        for(int x = 0; x < size; x++){ list.add(x); }
         //Using the function in this instance
         BinarySearch obj = new BinarySearch();
         //List to be searched, User Input size();
