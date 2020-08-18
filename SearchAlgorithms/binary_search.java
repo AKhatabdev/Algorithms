@@ -10,6 +10,7 @@ Big O Notation: T(n) = T(n/2) + c
 recursive implementation: O(Logn)
 iterative implementation: O(1)
 */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
