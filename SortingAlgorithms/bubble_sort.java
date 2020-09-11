@@ -1,6 +1,6 @@
 package SortingAlgorithms;
 /*
-Author: Awais Khatab
+Author: Awais Saif Ali Khatab
 Title: Bubble Sort with User Input
 Version: 1.12
 All rights reserved @Awais Khatab
@@ -10,6 +10,7 @@ Big O Notation:
 recursive implementation: O
 iterative implementation: O
 */
+
 public class bubble_sort {
     static class BubbleSort {
         //Sort Method

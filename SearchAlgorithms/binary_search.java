@@ -36,7 +36,7 @@ class BinarySearch {
             // Else the element can only be present in right sub array
             return binarySearch(list, mid+1, h, x);
         }
-        //  When the element is not present in the array
+        //If value isn't present in the array
         return -1;
     }
     // Driver method to test above
